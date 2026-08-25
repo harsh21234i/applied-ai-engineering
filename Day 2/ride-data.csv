@@ -1,0 +1,11 @@
+ride_id,distance_km,pickup_hour,traffic,weather,vehicle_type,is_weekend,passenger_count,actual_duration_min
+101,5.2,9,heavy,clear,bike,no,1,24
+102,12.5,14,light,clear,car,no,3,29
+103,8.1,18,heavy,rainy,auto,yes,2,41
+104,3.4,11,medium,clear,bike,no,1,15
+105,15.7,20,heavy,rainy,car,yes,4,58
+106,6.3,8,heavy,clear,auto,no,2,30
+107,2.8,15,light,clear,bike,no,1,10
+108,10.4,19,medium,rainy,car,yes,3,39
+109,7.6,13,medium,clear,auto,no,2,27
+110,18.2,7,light,clear,car,yes,4,42
