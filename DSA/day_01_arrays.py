@@ -56,3 +56,42 @@ def small_element(num):
             smallest=i
     return smallest
 print(f"smallest element is{small_element([4,3,5,6])}")
+
+##second largest element
+
+def second_largest(num):
+    largest =float("-inf")
+    second_largest=float("-inf")
+
+    for i in num:
+        if i>largest:
+            second_largest=largest
+            largest = i
+
+        elif largest>i>second_largest:
+            second_largest=i
+    if second_largest == float("-inf"):
+        return None
+    return second_largest
+print(f"second largest number is {second_largest([4,3,5,6])}")
+
+#second smallest
+def second_smallest(num):
+    if not num:
+        return 0
+
+    smallest= float("inf")
+    second_smallest=float("inf")
+
+    for i in num:
+        if i<smallest:
+            second_smallest=smallest
+            smallest=i
+        elif smallest>i>second_smallest:
+            second_smallest=i
+
+    if second_smallest == float("inf"):
+        return None
+
+    return second_smallest
+print(f"second smallest number is {second_smallest([4,3,5,6])}")
