@@ -33,16 +33,16 @@ def find_sum(num):
 print(f"total sum is {find_sum([4,3,5,6])}")
 
 ##Find the largest element
-def largest_element(number):
-    if not number:
+def largest_num(num):
+    if not num:
         return 0
 
-    largest=number[0]
-    for i in number:
-        if i>largest:
-            largest=i
-    return largest
-print(f"largest element is {largest_element([4,3,5,6])}")
+    large=num[0]
+    for i in num:
+        if i>large:
+            large=i
+    return large
+print(f"latgest number is {largest_num([4,3,5,6,7,8,9,36,413])}")
 
 #Smallest element
 def small_element(num):
