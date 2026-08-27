@@ -67,3 +67,8 @@ def count_characters(string):
 print(count_characters("Hello my name is 1762hhdwjnk"))
 
 
+##Remmove spaces
+
+def remove_spaces(string):
+    return string.replace(" ","")
+print(remove_spaces("Hello my name is 1762hhdwjnk"))
