@@ -72,3 +72,30 @@ print(count_characters("Hello my name is 1762hhdwjnk"))
 def remove_spaces(string):
     return string.replace(" ","")
 print(remove_spaces("Hello my name is 1762hhdwjnk"))
+
+
+##Find The Longest Word
+
+def long_word(string):
+    words=string.split()
+    if not words:
+        return ""
+
+    longest =words[0]
+
+    for word in words:
+        if len(word)>len(longest):
+            longest=word
+    return longest
+print(long_word("Hello harsh "))
+
+##Palindome after clening text
+
+def is_valid_palindrome(string):
+    clean=""
+
+    for char in string:
+        if char.isalnum():
+            clean=clean+ char.lower()
+    return clean==clean[::-1]
+print(is_valid_palindrome("A man, a plan, a canal: Panama"))
