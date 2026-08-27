@@ -1,3 +1,4 @@
+from unittest import result
 
 #reverse string
 
@@ -99,3 +100,41 @@ def is_valid_palindrome(string):
             clean=clean+ char.lower()
     return clean==clean[::-1]
 print(is_valid_palindrome("A man, a plan, a canal: Panama"))
+
+##character frequesncy
+
+def frequency(string):
+    frequency={}
+
+    for char in string:
+        if char in frequency:
+            frequency[char]+=1
+        else:
+            frequency[char]=1
+    return frequency
+print(frequency("Harshss"))
+
+#First NOn repeating character
+
+def non_repeat(string):
+    frequency={}
+
+    for char in string:
+        if char in frequency:
+            frequency[char]+=1
+        else:
+            frequency[char]=1
+    result=[]
+    for char in string:
+        if frequency[char]==1:
+            result.append(char)
+    return result
+print(non_repeat("harshss"))
+
+##Check Whether Two Strings Are Anagrams
+def anagrams(first,second):
+    first=first.lower()
+    second=second.lower()
+
+    return sorted(first)==sorted(second)
+print(anagrams("silent","listen"))

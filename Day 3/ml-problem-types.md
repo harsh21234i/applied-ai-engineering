@@ -50,7 +50,7 @@ Regression predicts a measurable numerical quantity, such as a ride
 duration of 23.4 minutes.
 
 A classification label may be stored as 0 or 1, but these numbers still
-represent categories.
+represent categories     .
 
 ## Business Problem Mapping
 
